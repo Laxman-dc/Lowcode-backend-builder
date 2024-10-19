@@ -26,7 +26,7 @@
 .search {
   width: 100%;
   padding: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #333;
   border: none;
   color: #fff;
@@ -34,7 +34,7 @@
 
 .content {
   list-style-type: none;
-  padding: 0;
+  
 }
 
 .content li {
@@ -74,6 +74,7 @@
   margin-top: auto;
   border-top: 1px solid #444;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .bottom-section ul {
@@ -83,13 +84,14 @@
 }
 
 .bottom-section li {
-  padding: 10px;
+  padding: 3px;
   margin-bottom: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   border-radius: 4px;
   transition: all 0.3s ease;
+  
 }
 
 .bottom-section li:hover {
@@ -98,4 +100,15 @@
 
 .bottom-section i {
   margin-right: 10px;
+  
 }
+
+
+.content, .bottom-section {
+  padding-left: 20px; /* Adjust this value as needed */
+}
+
+.content li, .bottom-section li {
+  padding-left: 0; /* Ensure no extra padding inside the list items */
+}
+
