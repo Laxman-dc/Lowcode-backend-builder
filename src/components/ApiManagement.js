@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "../styles/ApiManagement.css";
 import Authentication from "./Authentication"; // Import Authentication component
+import { useNavigate } from "react-router-dom";
 
 function ApiManagement() {
   const [showForm, setShowForm] = useState(false);
   const [tags, setTags] = useState([]);
   const [tagInput, setTagInput] = useState("");
   const [showAuthentication, setShowAuthentication] = useState(false); // State to trigger Authentication view
-
+  const navigate = useNavigate();
   const [apiGroups, setApiGroups] = useState([
     {
       name: "Authentication",
@@ -85,6 +86,12 @@ function ApiManagement() {
     }
   };
 
+  const handleViewClick = (groupName) => {
+    copyLink(groupName)
+    const selectedGroup = apiGroups.find(group => group.name === groupName);
+    navigate(`/view/${groupName}`, { state: { group: selectedGroup } }); // Navigate with state
+  };
+
   return (
     <div className="api-management-container">
       <div className="api-header">
@@ -110,7 +117,7 @@ function ApiManagement() {
             <p>{group.description}</p>
             <button
               className="view-button"
-              onClick={() => copyLink(group.name)}
+              onClick={() => handleViewClick(group.name)} 
             >
               View
             </button>

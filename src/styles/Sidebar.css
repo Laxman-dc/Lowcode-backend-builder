@@ -5,6 +5,7 @@
  
   color: #fff;
   padding: 16px;
+  position: fixed;
 }
 
 .sidebar h2 {

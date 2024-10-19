@@ -1,29 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Sidebar from "./components/Sidebar";
-import ApiManagement from "./components/ApiManagement";
-import Authentication from "./components/Authentication"; // Import Authentication component
-import "./styles/App.css";
-import Dashboard from "./components/Dashboard";
+import Home from "./pages/Home"; // Use capitalized component name
+import { Route, Routes } from "react-router-dom";
+import ApiOpen from "./pages/Api-open"; // Capitalized
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState("api");
-
-  const handleNavClick = (section) => {
-    setActiveSection(section);
-  };
-
   return (
-    <div className="app">
-      <Sidebar onNavClick={handleNavClick} activeSection={activeSection} />
-
-      <div className="content">
-      {activeSection === "api" && <ApiManagement />}
-      {activeSection === "dashboard" && <Dashboard />}
-        {activeSection === "api" && (
-          <ApiManagement onNavClick={handleNavClick} />
-        )}
-        {activeSection === "authentication" && <Authentication />}
-      </div>
+    <div className="app_main">
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Use capitalized Home */}
+        <Route path="/view/:groupName" element={<ApiOpen />} /> {/* Use capitalized ApiOpen */}
+      </Routes>
     </div>
   );
 };
