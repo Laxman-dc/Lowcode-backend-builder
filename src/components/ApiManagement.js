@@ -1,69 +1,46 @@
 import React from "react";
+import "./styles/ApiManagement.css"; // Normal CSS file for API management
 
 const ApiManagement = () => {
   return (
-    <div>
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold">API groups</h1>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-          + Add API Group
-        </button>
+    <div className="api-management">
+      <div className="api-header">
+        <h1>API Groups</h1>
+        <button className="add-api-btn">+ Add API Group</button>
       </div>
-      <div className="flex space-x-4 mb-6">
-        <button className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">
-          Documentation
-        </button>
-        <button className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">
-          Video tutorial
-        </button>
+
+      <div className="api-buttons">
+        <button className="doc-btn">Documentation</button>
+        <button className="video-btn">Video Tutorial</button>
       </div>
-      <div className="space-y-4">
-        <div className="bg-gray-800 p-4 rounded">
-          <div className="flex justify-between items-center">
+
+      <div className="api-groups">
+        <div className="api-group-card">
+          <div className="api-card-header">
             <div>
-              <h2 className="text-xl font-semibold">Authentication</h2>
-              <span className="text-xs text-gray-500">API Group #219774</span>
-              <p className="text-sm mt-2">
+              <h2>Authentication</h2>
+              <span className="api-id">API Group #219774</span>
+              <p>
                 This group contains API endpoints that your front-end will use
                 to communicate with your Database. You can create new ones by
-                clicking inside
+                clicking inside.
               </p>
             </div>
-            <button className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">
-              View
-            </button>
+            <button className="view-btn">View</button>
           </div>
-          <div className="mt-4 text-sm text-gray-400">3 Endpoints</div>
+          <div className="api-group-card-footer">3 Endpoints</div>
         </div>
-        <div className="bg-gray-800 p-4 rounded">
-          <div className="flex justify-between items-center">
+
+        <div className="api-group-card">
+          <div className="api-card-header">
             <div>
-              <h2 className="text-xl font-semibold">daw</h2>
-              <span className="text-xs text-gray-500">API Group #219818</span>
-              <p className="text-sm mt-2">daaw</p>
+              <h2>daw</h2>
+              <span className="api-id">API Group #219818</span>
+              <p>daaw</p>
             </div>
-            <button className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">
-              View
-            </button>
+            <button className="view-btn">View</button>
           </div>
-          <div className="mt-4 text-sm text-gray-400">0 Endpoints</div>
-        </div>
-        <div className="bg-gray-800 p-4 rounded">
-          <div className="flex justify-between items-center">
-            <div>
-              <h2 className="text-xl font-semibold">default</h2>
-              <span className="text-xs text-gray-500">API Group #219789</span>
-              <p className="text-sm mt-2">
-                This group contains API endpoints that your front-end will use
-                to communicate with your Database. You can create new ones by
-                clicking inside
-              </p>
-            </div>
-            <button className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">
-              View
-            </button>
-          </div>
-          <div className="mt-4 text-sm text-gray-400">0 Endpoints</div>
+          <div className="api-group-card-footer">0 Endpoints</div>
         </div>
       </div>
     </div>

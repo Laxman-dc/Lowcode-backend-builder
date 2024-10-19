@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./styles/App.css";
+import "./styles/Sidebar.css";
+import "./styles/ApiManagement.css";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("Dashboard");
