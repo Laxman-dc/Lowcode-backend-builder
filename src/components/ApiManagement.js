@@ -16,7 +16,7 @@ function ApiManagement() {
         "This group contains API endpoints that your front-end will use to communicate with your Database.",
       tags: [],
     },
-    { name: "daw", description: "daaw", tags: [] },
+
     {
       name: "default",
       description:
@@ -87,8 +87,8 @@ function ApiManagement() {
   };
 
   const handleViewClick = (groupName) => {
-    copyLink(groupName)
-    const selectedGroup = apiGroups.find(group => group.name === groupName);
+    copyLink(groupName);
+    const selectedGroup = apiGroups.find((group) => group.name === groupName);
     navigate(`/view/${groupName}`, { state: { group: selectedGroup } }); // Navigate with state
   };
 
@@ -117,7 +117,7 @@ function ApiManagement() {
             <p>{group.description}</p>
             <button
               className="view-button"
-              onClick={() => handleViewClick(group.name)} 
+              onClick={() => handleViewClick(group.name)}
             >
               View
             </button>

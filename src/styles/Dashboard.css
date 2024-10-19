@@ -1,5 +1,10 @@
 /* General layout and spacing */
+.dashboard_parent{
+  margin: 0 0 0 15vw;
+  background-color: #181818;
+}
 .dashboard-container {
+  
 
     color: white;
     font-family: Arial, sans-serif;

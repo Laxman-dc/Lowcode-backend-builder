@@ -5,6 +5,7 @@ import Authentication from "../components/Authentication"; // Import Authenticat
 import "../styles/App.css";
 import Dashboard from "../components/Dashboard";
 
+
 const Home = () => {
   const [activeSection, setActiveSection] = useState("api");
 
