@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/Sidebar.css";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({ onNavClick, activeSection }) => {
+  const navigate = useNavigate()
   return (
     <div className="sidebar">
       <h2>MumbaiHacks</h2>
@@ -12,37 +14,37 @@ const Sidebar = ({ onNavClick, activeSection }) => {
       <ul className="content">
         <li
           className={activeSection === "dashboard" ? "active" : ""}
-          onClick={() => onNavClick("dashboard")}
+          onClick={() => navigate("/")}
         >
           <i className="icon">🏠</i> Dashboard
         </li>
         <li
           className={activeSection === "database" ? "active" : ""}
-          onClick={() => onNavClick("database")}
+          onClick={() => navigate("/databse")}
         >
           <i className="icon">💾</i> Database
         </li>
         <li
           className={activeSection === "api" ? "active" : ""}
-          onClick={() => onNavClick("api")}
+          onClick={() => navigate("/api")}
         >
           <i className="icon">💻</i> API
         </li>
         <li
           className={activeSection === "tasks" ? "active" : ""}
-          onClick={() => onNavClick("tasks")}
+          onClick={() => navigate("/tasks")}
         >
           <i className="icon">📝</i> Tasks
         </li>
         <li
           className={activeSection === "library" ? "active" : ""}
-          onClick={() => onNavClick("library")}
+          onClick={() => navigate("/library")}
         >
           <i className="icon">📚</i> Library
         </li>
         <li
           className={activeSection === "connect" ? "active" : ""}
-          onClick={() => onNavClick("connect")}
+          onClick={() => navigate("/connect")}
         >
           <i className="icon">🔌</i> Connect
         </li>

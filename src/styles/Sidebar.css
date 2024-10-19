@@ -64,7 +64,7 @@
   position: relative;
 }
 
-.content li.active:hover {
+.content li:hover {
   background-color: #0055ff;
   box-shadow: 0 0 15px 5px rgba(0, 85, 255, 1),
     0 0 30px 10px rgba(0, 85, 255, 0.7);
