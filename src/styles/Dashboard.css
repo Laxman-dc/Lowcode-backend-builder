@@ -1,0 +1,234 @@
+/* General layout and spacing */
+.dashboard-container {
+
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070809;
+    width: 100%;
+    padding: 10px 20px; /* Optional padding for spacing */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  }
+  
+  
+  h2 {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-profile span {
+    background-color: #d1e8db;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+    margin-right: 10px;
+  }
+  
+  .settings-icon {
+    cursor: pointer;
+  }
+  
+  /* Section 1: Learn and Get Inspired */
+  .learn-section {
+    margin-top: 20px;
+  }
+  
+  .learn-section h3 {
+    color: white;
+  }
+  
+  .learn-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 15px;
+   
+  }
+  
+  .card {
+    background-color: #0f1d3e;
+    width: 350px;
+    height: 90px;
+    border: 2px solid #d1e8db;
+  
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border-color: #929895;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .card:hover {
+    background-color: #48523c;
+  }
+  
+  .card-icon {
+    font-size: 32px;
+    margin-right: 15px;
+    margin: 10px;
+  }
+  
+  .card-text h4 {
+    color: white;
+    margin: 0; /* Removes the default margin */
+  }
+  
+  .card-text p {
+    color: #9fa3a7;
+    margin-top: 4px; /* Adjust this value to control spacing between the texts */
+    margin-bottom: 0; /* Removes the bottom margin */
+  }
+  
+  
+  /* Section 2: Ready to Build */
+  .build-section {
+    margin-top: 40px;
+  }
+  
+  .build-section h3 {
+    color: white;
+  }
+  
+  .build-section p {
+    color: #9fa3a7;
+    margin-bottom: 20px;
+  }
+  
+  .build-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .build-card {
+    background-color: #2c2f36;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  .build-card:hover {
+    background-color: #35393f;
+  }
+  
+  .build-card-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .build-card-text h4 {
+    color: white;
+  }
+  
+  .build-card-text p {
+    color: #9fa3a7;
+  }
+  
+  .small-text {
+    color: #5f6367;
+    font-size: 12px;
+  }
+  
+  .get-started-button,
+  .community-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .community-button {
+    background-color: transparent;
+    border: 1px solid #007bff;
+  }
+  
+  .get-started-button:hover,
+  .community-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  body {
+    background-color: #1f1f1f;
+    color: #d3d3d3;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    color: #d3d3d3;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.primary-btn {
+    background-color: #267df4;
+    color: #ffffff;
+}
+
+.secondary-btn {
+    background-color: #3b3b3b;
+    color: #ffffff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
