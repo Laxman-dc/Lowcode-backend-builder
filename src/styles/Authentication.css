@@ -1,0 +1,143 @@
+.authentication-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.authentication-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.endpoints h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.endpoint-section {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.endpoint-header label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.endpoint-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.method {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.method-post {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.method-get {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.method-draft {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.endpoint-name {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.endpoint-id {
+  font-size: 14px;
+  color: #777;
+}
+
+.endpoint-description {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.access-type {
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.access-type.public {
+  background-color: #28a745;
+  color: white;
+}
+
+.access-type.private {
+  background-color: #007bff;
+  color: white;
+}
+.authentication-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.endpoint-section {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.endpoint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.method-post {
+  color: green;
+  font-weight: bold;
+}
+
+.method-get {
+  color: blue;
+  font-weight: bold;
+}
+
+.endpoint-url {
+  font-weight: bold;
+}
+
+.endpoint-id {
+  color: #888;
+}
+
+.endpoint-access {
+  font-weight: bold;
+  color: #444;
+}

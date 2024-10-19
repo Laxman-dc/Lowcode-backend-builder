@@ -1,11 +1,11 @@
-// src/App.js
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import ApiManagement from "./components/ApiManagement";
+import Authentication from "./components/Authentication"; // Import Authentication component
 import "./styles/App.css";
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState("dashboard");
+  const [activeSection, setActiveSection] = useState("api");
 
   const handleNavClick = (section) => {
     setActiveSection(section);
@@ -14,9 +14,12 @@ const App = () => {
   return (
     <div className="app">
       <Sidebar onNavClick={handleNavClick} activeSection={activeSection} />
+
       <div className="content">
-        {activeSection === "api" && <ApiManagement />}
-        {activeSection !== "api" && <div>Select a section</div>}
+        {activeSection === "api" && (
+          <ApiManagement onNavClick={handleNavClick} />
+        )}
+        {activeSection === "authentication" && <Authentication />}
       </div>
     </div>
   );
