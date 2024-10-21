@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import Api from "../pages/Api";
+import  "../styles/Api-open.css";
 import "../styles/Api-open.css";
 import { FaSearch } from "react-icons/fa"; // Import search icon from react-icons
 
