@@ -72,6 +72,7 @@ function Dashboard() {
         </p>
         <div className="dashboard-grid">
           <div className="dashboard-card">
+          <div className="card-icon2">❓</div>
             <h2>Check out the tutorial</h2>
             <p>
               A guided use case to help you learn how Xano can help you build a
@@ -82,6 +83,7 @@ function Dashboard() {
           </div>
 
           <div className="dashboard-card">
+          <div className="card-icon2">❓</div>
             <h2>Introduce yourself to the Xano Community</h2>
             <p>
               Connect with fellow Xano users, seek assistance, and discover
@@ -91,42 +93,46 @@ function Dashboard() {
           </div>
 
           <div className="dashboard-card">
+          <div className="card-icon2">❓</div>
             <h2>Quickstart guide</h2>
             <p>
               Take a look at our curated selection of videos and suggested tasks
               to help you get familiar with Xano.
             </p>
             <p>2 hrs to complete</p>
-            <button className="primary-btn">Get started</button>
+            <button className="secondary-btn">Get started</button>
           </div>
 
           <div className="dashboard-card">
+          <div className="card-icon2">❓</div>
             <h2>Build an API</h2>
             <p>
               Ready to dig in? Start building an API endpoint using Xano's
               no-code API builder.
             </p>
-            <button className="primary-btn">Add an endpoint</button>
+            <button className="secondary-btn">Add an endpoint</button>
           </div>
 
           <div className="dashboard-card">
+          <div className="card-icon2">❓</div>
             <h2>Bring your data into Xano</h2>
             <p>
               Import your data from Airtable or CSV. You can also copy and paste
               data into a database table.
             </p>
             <p>4 min to complete</p>
-            <button className="primary-btn">Import data</button>
+            <button className="secondary-btn">Import data</button>
           </div>
 
           <div className="dashboard-card">
+          <div className="card-icon2">❓</div>
             <h2>Authentication</h2>
             <p>
               Xano can automatically set up user authentication/login with email
               and OAuth services.
             </p>
             <p>9 min to complete</p>
-            <button className="primary-btn">Set up authentication</button>
+            <button className="secondary-btn">Set up authentication</button>
           </div>
         </div>
       </div>

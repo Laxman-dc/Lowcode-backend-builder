@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import ApiManagement from "../components/ApiManagement";
+import Api from "../pages/Api";
 import  "../styles/Api-open.css";
 
 const ViewApiGroup = () => {
