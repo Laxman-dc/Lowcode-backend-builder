@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../src/components/Sidebar";
 import { Route, Routes } from "react-router-dom";
-import ApiOpen from "./pages/Api-open"; // Capitalized
+import ApiOpen from "./pages/Api-open"; 
 import Dashboard from "./pages/Dashboard";
 import Api from "./pages/Api";
 

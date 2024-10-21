@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
-import ApiManagement from "../components/ApiManagement";
-import Authentication from "../components/Authentication"; // Import Authentication component
+import Api from "../pages/Api";
+import Api-open from "../pages/Api-open"; 
 import "../styles/App.css";
 import Dashboard from "../components/Dashboard";
 
